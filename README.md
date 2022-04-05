@@ -20,7 +20,7 @@ The data path of the project is given below:
 
 <!-- Contents -->
 # Contents
-<!-- Contents -->
+<!-- Verilog Files  -->
 ## Verilog Files 
 This project is composed of several Verilog modules which instantiate the communication between the FPGA and computer and Bitcoin mining algorithim.
 * Top.v
@@ -34,8 +34,12 @@ This project is composed of several Verilog modules which instantiate the commun
 * SHA_256.v
   * Secure Hash 256 instantiation
 * Bitcoin_Wrapper.v
-  * Bitcoin mining protocol 
+  * Bitcoin mining protocol
+<!-- Constraint File -->
+## Constraint Files 
 * constraint.xdc
   * Constraint file for settup up UART I/O connections and system clock I/O
+<!-- IP Files -->
+## IP Files 
 * clk_wiz_0.xci
   * Clocking wizard Vivado IP that instantiates the application's clock from the system's differential clock
