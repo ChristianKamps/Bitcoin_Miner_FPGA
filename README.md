@@ -19,10 +19,23 @@ The data path of the project is given below:
 6. The Python application recieves the data from the FPGA and uploads the relevant data to the Bitcoin network. 
 
 <!-- Contents -->
-## Contents
-The contents of this project will be uploaded at a later date.
-<!-- This project is composed of two files:
-* Technical_Report.pdf 
-  * A detailed analysis and description of the designed system in MATLAB
-* Digital_Communications_Simulation_Christian_Kamps.m
-  * The MATLAB file containing the design digital communciation system -->
+# Contents
+<!-- Contents -->
+## Verilog Files 
+This project is composed of several Verilog modules which instantiate the communication between the FPGA and computer and Bitcoin mining algorithim.
+* Top.v
+  * Top level file that instantiates the transmission and receiver protocols for the UART connection
+* UART_RX.v
+  * UART receiver protocol
+* UART_TX.v
+  * UART transmitter protocol
+* Merkle_Root_Hash.v
+  * Merkle root hash generator
+* SHA_256.v
+  * Secure Hash 256 instantiation
+* Bitcoin_Wrapper.v
+  * Bitcoin mining protocol 
+* constraint.xdc
+  * Constraint file for settup up UART I/O connections and system clock I/O
+* clk_wiz_0.xci
+  * Clocking wizard Vivado IP that instantiates the application's clock from the system's differential clock
