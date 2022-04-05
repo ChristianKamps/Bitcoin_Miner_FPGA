@@ -38,7 +38,7 @@ This project is composed of several Verilog modules which instantiate the commun
 <!-- Constraint File -->
 ## Constraint Files 
 * constraint.xdc
-  * Constraint file for settup up UART I/O connections and system clock I/O
+  * Constraint file for setting up UART I/O connections and system clock I/O
 <!-- IP Files -->
 ## IP Files 
 * clk_wiz_0.xci
