@@ -5,9 +5,6 @@
 ## Overview
 This project implements the necessary computational and transmission elements onto a FPGA to enable the Bitcoin mining algorithm. The Bitcoin mining algorithm is written in Verilog and sythesized using Vivado 2021. The aggregation of Bitcoin network data is accomplished through API requests using a Python application. 
 
-**This project is unfinished.**
-**A detailed low-level report is in progress.**
-
 <!-- Data Path -->
 ## Data Path
 The data path of the project is given below:
