@@ -1,0 +1,108 @@
+{
+    "result": {
+        "hash": "000000000000000000010546266c075ab438caab5aa65a568b2044bb85ca76cc",
+        "confirmations": 7,
+        "height": 727702,
+        "version": 568623104,
+        "versionHex": "21e48000",
+        "merkleroot": "a09a0c226aa923e9bb883dc723b40181dff192f94af99dc3e74137fe6d0a6119",
+        "time": 1647496474,
+        "mediantime": 1647494380,
+        "nonce": 3948039296,
+        "bits": "170a3773",
+        "difficulty": 27550332084343.84,
+        "chainwork": "00000000000000000000000000000000000000002a66754a7111f8c8f4d5b365",
+        "nTx": 19,
+        "previousblockhash": "000000000000000000049800f6df4e3c3141488ee6a91eb79f59a903ee641691",
+        "nextblockhash": "00000000000000000007a7279e81a9b23ae5f350e5553cc5673a337f7b1396c1"
+    },
+    "error": null,
+    "id": null
+}
+{
+    "result": "0080e421911664ee03a9599fb71ea9e68e4841313c4edff600980400000000000000000019610a6dfe3741e7c39df94af992f1df8101b423c73d88bbe923a96a220c9aa01acd326273370a17804c52eb",
+    "error": null,
+    "id": null
+}
+
+Block Header (Hex/LE):
+Version:                        0080e421
+Previous Block Header Hash:     911664ee03a9599fb71ea9e68e4841313c4edff6009804000000000000000000
+Merkle Root Hash:               19610a6dfe3741e7c39df94af992f1df8101b423c73d88bbe923a96a220c9aa0
+Time:                           1acd3262
+nBits:                          73370a17
+Nonce:                          804c52eb
+
+version (4 Bytes): 
+BE: 21e48000 
+LE: 0080e421
+
+prev_Block_Header_Hash (32 Bytes): 
+BE: 000000000000000000049800f6df4e3c3141488ee6a91eb79f59a903ee641691
+LE: 911664ee03a9599fb71ea9e68e4841313c4edff6009804000000000000000000
+
+merkle_Root_Hash (32 Bytes): 
+BE: a09a0c226aa923e9bb883dc723b40181dff192f94af99dc3e74137fe6d0a6119
+LE: 19610a6dfe3741e7c39df94af992f1df8101b423c73d88bbe923a96a220c9aa0
+
+time (4 Bytes): 
+Unix Time:      1647496474
+GMT:            2022-17-03 06:18:14
+Hex (BE):       6232cd1a
+Hex (LE):       1acd3262
+
+nBits (4 Bytes): 
+Dec:                386545523
+Hex (BE):           170a3773
+Hex (LE):           73370a17
+
+Nonce (4 Bytes):
+Dec:                3948039296
+Hex (BE):           eb524c80
+Hex (LE):           804c52eb
+
+Output Hash (32 Bytes):
+Hex (BE):           000000000000000000010546266c075ab438caab5aa65a568b2044bb85ca76cc 
+Hex (LE):           cc76ca85bb44208b565aa65aabca38b45a076c26460501000000000000000000
+
+Threshold (32 Bytes):
+nBits Hex (BE):         170a3773
+Significand:            0a3773      =   669555
+Exponent:               17          =   23
+Base:                   256
+Bytes in Significand:   3
+Threshold = Significand*Base^(Exponent-Bytes in Significand)
+Threshold = 669555*256^(23-3) = 978555728783092703397868198169350877225727913812295680 = 0xa37730000000000000000000000000000000000000000 (180 Bits)
+32 Bytes = 256 Bits
+256 - 180 = 76 Bits = 19 Hex values -> Append 19 leading zeroes
+Append leading zeros for 32 bytes: 
+Hex (BE): 0000000000000000000a37730000000000000000000000000000000000000000
+Hex (LE): 000000000000000000000000000000000000000073370a000000000000000000
+
+Digest (LE) must satisfy threshold:
+
+threshold [17:0] = 18'd0; -> digest[17:0] = 0
+threshold [23:18] = 24'h73370a; -> {threshold[19:18],threshold[21:20],threshold[23:22]} = 24'h0a3773; -> {digest[19:18],digest[21:20],digest[23:22]} < 24'h0a3773;
+
+if ((digest[17:0] = 0) & ({digest[19:18],digest[21:20],digest[23:22]} < 24'h0a3773))
+
+Transaction Hashes:
+01: 3373125fb9f2416ca7f0a9ed3667baf38283616c9e3cd6f9264adcb844cc7045
+02: d5f073768b74a6e70cef586eed87112e0da0922964de262fcc024c9828f82293
+03: 167011653a672066545cb7f959b2623f18a418cb7384e9d2d53fce8f129ddade
+04: f1a3b70827a7cf18664a8d14918b5c799f51f203667ec18b3a6a296a132edef9
+05: 620a529090a0691e1fe8eef59d081bed1b6f349082c69235a8c0c275814c07e1
+06: 21f4e561757a8c9ee2f8713664823276d0886258ef5cc344d1c3afebe117a6e3
+07: ff7fa9382553216936a17b6ffe950c0a869e8d27ffd121524d440bd0cb174f15
+08: bafda3120ce9c544177994e1178f92503a73e9d4f6cb21f075eee34b2e2735b9
+09: 65ea081f82c9ee393db2b44113ab216c61ce73fb4702a63481f4e4967f59f208
+10: 2756b9b6e32be5356ac2361079fec6d8e881733eae17f2479d7d83a863d55b86
+11: e711fc1090afe47bf6b6297ddfe56a89d94f008d2c4d2d577b81d86365c7cd2b
+12: b217bdb5e1e166332b10f642a02a821221d88172a7a52cf518a9d87e2b9733e2
+13: d741b8ed9a6d60a59a8de09e1716ac1f88423b9d7ca4d81bb173c94b136b1e67
+14: 724b600e00e4d2b4bff8f56f5852efbfb51b19b675a1c96874efd3dffa42c9dd
+15: b6a81b6abcc8ac4380ee3e6c2658709458ebd15ed1483be9a211bde3f80afd80
+16: 1dd5251c8fd7d5a96da301a7815bf870d955622ce18dc7dd84e4b8f8ae7ccabb
+17: 4bef72e31578ac363fa4f7652259b44040e59e234c510d426ad4bf9e4339461a
+18: 45c8eb7da7f16a313b30b2dff5a0bab7dc47efca915e53a9820673126891200c
+19: 812135411f00a8c448365510ba85940da88fb4a8dfa5bc7b2ff344e2af5e0337
